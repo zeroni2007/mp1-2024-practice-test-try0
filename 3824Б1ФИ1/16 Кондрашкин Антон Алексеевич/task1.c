@@ -9,5 +9,5 @@ int sum_of_two_numbers(int a, int b){
   if (a <= INT_MIN - b) {
     return INT_MIN;
   }
-  return c;
+  return (int)c;
 }

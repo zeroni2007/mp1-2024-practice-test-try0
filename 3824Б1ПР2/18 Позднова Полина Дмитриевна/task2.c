@@ -4,8 +4,9 @@
 #include <limits.h>
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 {
-	int result;
-	result = a * b;
-	if (result >= UINT_MAX) result = UINT_MAX;
+	unsigned int result;
+	if (a > UINT_MAX / b)
+		result = UINT_MAX;
+	else result = a * b;
 	return result;
 }

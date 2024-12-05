@@ -5,14 +5,14 @@
 #include <limits.h>
 
 int sum_of_two_numbers(int a, int b){
-    if (a >= 0 && b >= INT_MAX - a) 
+    if (a > 0 && b > INT_MAX - a) 
         return INT_MAX; 
-    else if (b >= 0 && a >= INT_MAX - b) 
+    else if (b > 0 && a > INT_MAX - b) 
         return INT_MAX; 
     
-    else if (a <= 0 && b <= INT_MIN - a) 
+    else if (a < 0 && b < INT_MIN - a) 
         return INT_MIN; 
-    else if (b <= 0 && a <= INT_MIN - b) 
+    else if (b < 0 && a < INT_MIN - b) 
         return INT_MIN; 
     return a + b;
 }

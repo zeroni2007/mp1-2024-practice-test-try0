@@ -12,5 +12,5 @@ int sum_of_two_numbers(int a, int b)
 	{
 		return a + b;
 	}
-  return 0;
+        return 0;
 }

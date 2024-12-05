@@ -3,14 +3,14 @@
 #include <locale.h>
 
 int sum_of_two_numbers(int a, int b) {
-    long long sum = (long long)a + b; 
-    if (sum >= INT_MAX) {
-        return INT_MAX;
+    if (a > 0 && b > 0 && a > INT_MAX - b) {
+        return INT_MAX; 
     }
-    else if (sum <= INT_MIN) {
-        return INT_MIN;
+    if (a < 0 && b < 0 && a < INT_MIN - b) {
+        return INT_MIN; 
     }
-    return (int)sum; 
+
+    return a + b; 
 }
 
 int main() {

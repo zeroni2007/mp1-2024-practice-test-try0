@@ -30,4 +30,6 @@ double max_of_two_numbers(double a, double b)
 			return a;
 		return b;
 	}
+	else if (a == b)
+	return a;
 }

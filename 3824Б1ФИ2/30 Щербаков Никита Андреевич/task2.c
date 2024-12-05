@@ -18,7 +18,9 @@ unsigned int product_of_two_numbers(unsigned int a, unsigned int b)
 		if (res != a)
 			return c;
 	}
-	else if (a == 0 || b == 00)
+	else if ((a == c || b == c) && a != 0 && b != 0)
+		return c;
+	else if (a == 0 || b == 0)
 		return 0;
 	return a * b;
 }

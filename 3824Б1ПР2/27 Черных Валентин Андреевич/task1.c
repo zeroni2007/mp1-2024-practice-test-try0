@@ -5,10 +5,10 @@
 
 int sum_of_two_numbers(int a, int b)
 {
-    if (a >= INT_MAX - b)
+    if (a > 0 && b > 0 && a + b <= 0)
         return INT_MAX;
-    
-    if (a <= INT_MIN - b)
+
+    if (a < 0 && b < 0 && a + b >= 0)
         return(INT_MIN);
 
     int sum = a + b;

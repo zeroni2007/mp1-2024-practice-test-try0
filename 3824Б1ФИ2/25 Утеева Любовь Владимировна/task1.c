@@ -12,13 +12,3 @@ int sum_of_two_numbers(int a, int b) {
 
     return a + b; 
 }
-
-int main() {
-    setlocale(LC_ALL, "Rus");
-    int a, b, sum;
-    printf("Введите два целых числа: ");
-    scanf_s("%d %d", &a, &b);
-    int result = sum_of_two_numbers(a, b);
-    printf("Сумма: %d\n", result);
-    return 0;
-}

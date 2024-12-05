@@ -2,5 +2,5 @@
 double max_of_two_numbers(double a, double b)
 {
   double max_num = (a >= b)? a : b;
-  return max;
+  return max_num;
 }

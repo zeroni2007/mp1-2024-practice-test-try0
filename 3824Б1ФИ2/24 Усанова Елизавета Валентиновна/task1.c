@@ -1,16 +1,20 @@
-#include <stdio.h>
 #include <limits.h>
+int sum_of_two_numbers(int a, int b)
+{
+    if (a >= 0 && INT_MAX - a <= b) {
+        return INT_MAX;
+    }
+    else if (b >= 0 && INT_MAX - b <= a)
+    {
+        return INT_MAX;
+    }
+    else if (a <= 0 && INT_MIN - a >= b)
+    {
+        return INT_MIN;
+    }
+    else if (b <= 0 && INT_MIN - b >= a) {
+        return INT_MIN;
+    }
 
-int proga(int a, int b) {
-    long long sum = (long long)a + (long long)b; 
-
-    if (sum > INT_MAX) {
-        return INT_MAX; 
-    }
-    else if (sum < INT_MIN) {
-        return INT_MIN; 
-    }
-    else {
-        return (int)sum; 
-    }
+    return a + b;
 }

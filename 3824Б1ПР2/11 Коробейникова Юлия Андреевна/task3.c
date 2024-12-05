@@ -2,10 +2,9 @@
 
 double max_of_two_numbers(double a, double b)
 {
-   if (a > b) {
+   if (a >= b) {
         return a; 
-    } else {
+    } else if (b < a) {
         return b; 
     }
-  return 0.0;
 }

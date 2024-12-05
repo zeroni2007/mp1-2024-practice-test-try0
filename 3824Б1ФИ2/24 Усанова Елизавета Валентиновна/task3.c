@@ -1,4 +1,4 @@
 #include <stdio.h>
-double max(double a, double b) {
+double max_of_two_numbers(double a, double b) {
     return (a > b) ? a : b;
 }

@@ -1,6 +1,10 @@
-#include <stdio.h>
+/*// Задача 2. Найти произведение натуральных чисел a и b
+// Если a * b >= UINTMAX, возвращать UINTMAX
+unsigned int productoftwo_numbers(unsigned int a, unsigned int b)
+{
+  return 0;
+}*/
 #include <limits.h>
-#include <locale.h>
 
 unsigned int product_of_two_numbers(unsigned int a, unsigned int b) {
     if (a == 0 || b == 0) return 0;

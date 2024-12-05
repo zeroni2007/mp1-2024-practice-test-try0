@@ -6,9 +6,12 @@
 #include <limits.h>
 int sum_of_two_numbers(int a, int b)
 {
-	int result;
-	result = a + b;
-	if (result >= INT_MAX) result = INT_MAX;
-	if (result <= INT_MIN) result = INT_MIN;
-	return result;
+	int res;
+if ((a > INT_MAX - b) && (a > 0) && (b > 0))
+	res = INT_MAX;
+else if ((a < INT_MIN - b) && (a < 0) && (b < 0))
+	res = INT_MIN;
+else
+	res = a + b;
+return res;
 }

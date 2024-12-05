@@ -12,7 +12,7 @@ int main()
 {
   unsigned int a, b;
   printf("two_numbers: ");
-  scanf_s("%d %d", &a, &b);
+  scanf("%d %d", &a, &b);
   unsigned int product = product_of_two_numbers(a, b);
   printf("product: %d\n", product);
   return 0;

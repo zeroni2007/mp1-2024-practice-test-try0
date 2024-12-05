@@ -2,11 +2,11 @@
 // Если a + b >= INT_MAX, возвращать INT_MAX
 // Если a + b <= INT_MIN, возвращать INT_MIN
 int sum_of_two_numbers(int a, int b){ 
-  int c = a + b;
+  double c = a + b;
   if (c >= INT_MAX) 
     return INT_MAX;
   else if (c <= INT_MIN)
     return INT_MIN;
   else 
-    return c;
+    return (int)c;
 }

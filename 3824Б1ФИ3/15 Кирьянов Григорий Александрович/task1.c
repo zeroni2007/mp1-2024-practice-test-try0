@@ -2,7 +2,6 @@
 // Если a + b >= INT_MAX, возвращать INT_MAX
 // Если a + b <= INT_MIN, возвращать INT_MIN
 #include <limits.h>
-#include <locale.h>
 
 int sum_of_two_numbers(int a, int b) {
     long long sum = (long long)a + b;
@@ -18,20 +17,3 @@ int sum_of_two_numbers(int a, int b) {
     }
 }
 
-#include <stdio.h>
-
-int main() {
-    setlocale(LC_ALL, "Rus");
-    int a, b;
-
-    printf("Введите первое целое число: ");
-    scanf_s("%d", &a);
-
-    printf("Введите второе целое число: ");
-    scanf_s("%d", &b);
-
-    int result = sum_of_two_numbers(a, b);
-    printf("Сумма чисел: %d\n", result);
-
-    return 0;
-}

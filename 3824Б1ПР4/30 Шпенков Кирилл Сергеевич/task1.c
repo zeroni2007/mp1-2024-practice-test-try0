@@ -11,7 +11,7 @@ int sum_of_two_numbers(int a, int b)
   return a + b; 
 }
 int main() {
-    int a = 76, b = 1;
+    int a = 999, b = 5;
     printf("%d\n", sum_of_two_numbers(a, b));
     return 0;
 }

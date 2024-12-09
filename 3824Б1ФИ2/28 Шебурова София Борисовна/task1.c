@@ -19,6 +19,5 @@ int sum_of_two_numbers(int a, int b)
     else if(b <= 0 && INT_MIN - b >= a){
         return INT_MIN;
     }
-    
     return a+b;
 }
